@@ -1,35 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="X7k-y8-ngi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CFz-3c-9Gf">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
-        <!--Hang on-->
+        <!--Welcome view-->
         <scene sceneID="73y-iI-GAa">
             <objects>
-                <viewController title="Hang on" id="HBc-4K-K4u" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="GLV-0c-CWf"/>
-                        <viewControllerLayoutGuide type="bottom" id="x0R-1W-nS3"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="cJH-Xr-iDq">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="a5b34ac8665dd7945d95698662232c9b.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="c6X-sA-qOS">
-                                <rect key="frame" x="0.0" y="44" width="600" height="600"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
-                                </variation>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="gqH-vG-pOK"/>
+                <viewController title="Welcome view" id="HBc-4K-K4u" sceneMemberID="viewController">
+                    <imageView key="view" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a5b34ac8665dd7945d95698662232c9b.jpg" id="6iv-3N-d44">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <navigationItem key="navigationItem" title="Autumn" id="OKb-by-UNW">
+                        <barButtonItem key="rightBarButtonItem" title="View Message" id="XSd-pO-9Ai">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="mLn-Xr-LeU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E5q-gs-Erq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="481.5" y="390"/>
+            <point key="canvasLocation" x="1399.5" y="390"/>
         </scene>
         <!--Item-->
         <scene sceneID="tne-QT-ifu">
@@ -42,34 +35,119 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avki-ru-0002-avatar-babochka-anomalous-emperor.gif" translatesAutoresizingMaskIntoConstraints="NO" id="c0p-Wz-p6V">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="285" y="72" width="99" height="101"/>
+                                </variation>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter name here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hWc-mw-PMI">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="189" width="368" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter message text here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T6X-wq-g2Y">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="236" width="368" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lmm-iz-80D">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.9241779526813233" green="0.71749776768930951" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Send message">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="274" width="368" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="sendMessageButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="asb-bn-UrP"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qre-SX-9Ba">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="72" width="261" height="28"/>
+                                </variation>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idY-30-H1C">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="108" width="261" height="73"/>
+                                </variation>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="c0p-Wz-p6V"/>
+                                <exclude reference="hWc-mw-PMI"/>
+                                <exclude reference="T6X-wq-g2Y"/>
+                                <exclude reference="Lmm-iz-80D"/>
+                                <exclude reference="qre-SX-9Ba"/>
+                                <exclude reference="idY-30-H1C"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="c0p-Wz-p6V"/>
+                                <include reference="hWc-mw-PMI"/>
+                                <include reference="T6X-wq-g2Y"/>
+                                <include reference="Lmm-iz-80D"/>
+                                <include reference="qre-SX-9Ba"/>
+                                <include reference="idY-30-H1C"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Ox2-fB-kth"/>
+                    <connections>
+                        <outlet property="enterMessageField" destination="T6X-wq-g2Y" id="scf-Zy-Cx7"/>
+                        <outlet property="enterNameField" destination="hWc-mw-PMI" id="czF-yE-J2H"/>
+                        <outlet property="messageLabel" destination="idY-30-H1C" id="ike-ho-MV7"/>
+                        <outlet property="nameLabel" destination="qre-SX-9Ba" id="XiE-H6-bem"/>
+                        <outlet property="sendMessageButton" destination="Lmm-iz-80D" id="LyN-HV-6IA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1192" y="337"/>
+            <point key="canvasLocation" x="2055" y="390"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="FfD-jY-kPv">
+        <!--Item-->
+        <scene sceneID="xaU-te-zb8">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="X7k-y8-ngi" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CFz-3c-9Gf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="gqH-vG-pOK"/>
                     <toolbarItems/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="iCU-nC-iR4">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VEB-yP-ax0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="HBc-4K-K4u" kind="relationship" relationship="viewControllers" id="YiM-4E-E0j"/>
+                        <segue destination="HBc-4K-K4u" kind="relationship" relationship="rootViewController" id="w5z-rZ-mCC"/>
                     </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mab-Up-i7u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rrs-Db-Per" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-256" y="334"/>
+            <point key="canvasLocation" x="481.5" y="390"/>
         </scene>
     </scenes>
     <resources>
         <image name="a5b34ac8665dd7945d95698662232c9b.jpg" width="495" height="700"/>
+        <image name="avki-ru-0002-avatar-babochka-anomalous-emperor.gif" width="96" height="96"/>
     </resources>
 </document>
