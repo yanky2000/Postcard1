@@ -9,7 +9,7 @@
             <objects>
                 <viewController title="Welcome view" id="HBc-4K-K4u" sceneMemberID="viewController">
                     <imageView key="view" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a5b34ac8665dd7945d95698662232c9b.jpg" id="6iv-3N-d44">
-                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
                     <navigationItem key="navigationItem" title="Autumn" id="OKb-by-UNW">

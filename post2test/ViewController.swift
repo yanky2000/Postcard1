@@ -30,20 +30,20 @@ class ViewController: UIViewController {
 
     @IBAction func sendMessageButtonPressed(sender: UIButton) {
         
-
+        //Unhide labels
+        nameLabel.hidden = false
+        messageLabel.hidden = false
+        
         nameLabel.text = enterNameField.text
         messageLabel.text = enterMessageField.text
         nameLabel.textColor = UIColor.brownColor()
         messageLabel.textColor = UIColor.brownColor()
         
-        
+        //Update enter name and text fields
         enterNameField.text = ""
         enterMessageField.text = ""
         
-        // Show name and message text on screen
-        nameLabel.hidden = false
-        messageLabel.hidden = false
-        
+        //update press button        
         sendMessageButton.setTitle("Message sent", forState: UIControlState.Normal)
         
         //Hide keyboard
